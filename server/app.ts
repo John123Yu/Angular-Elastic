@@ -32,6 +32,10 @@ mongodb
 
     setRoutes(app);
 
+    // app.get('/HOLA', function(req, res) {
+    //   console.log("HOLA")
+    // });
+
     app.get('/*', function(req, res) {
       res.sendFile(path.join(__dirname, '../public/index.html'));
     });

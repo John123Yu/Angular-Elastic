@@ -1,0 +1,7 @@
+<div *ngFor="let elasticQuery of elasticQueries" style="margin-top:20px">
+  <h3>{{ elasticQuery._source.title}}</h3>
+  <ul>
+      <li *ngFor="let item of generateKeyValuePair(elasticQuery._source)"> {{ item | uppercase }} </li>
+  </ul>
+  <hr/>
+</div>

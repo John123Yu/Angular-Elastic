@@ -16,6 +16,7 @@ export class CatsComponent implements OnInit {
   cats: Cat[] = [];
   isLoading = true;
   isEditing = false;
+  
 
   addCatForm: FormGroup;
   name = new FormControl('', Validators.required);
